@@ -30,16 +30,6 @@ async function fetchOpenGraphMetadata(url) {
   }
 }
 
-// Example usage:
-const urlToFetch = 'https://example.com';
-fetchOpenGraphMetadata(urlToFetch)
-  .then((metadata) => {
-    console.log('Open Graph Metadata:', metadata);
-  })
-  .catch((error) => {
-    console.error('Error:', error.message);
-  });
-
 app.get('/og-metadata', async (req, res) => {
   const urlToFetch = req.query.url;
 
